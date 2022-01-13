@@ -1,30 +1,32 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "techblog",
   "version": "1.0.0",
-  "description": "",
+  "description": "* this page will display my team's basic info\r * a quick access to the teamate's email is display\r * a quick access to the github profile is display if one is an engineer\r ## Command-line application\r * this application will accept user input\r * application will start by node.index \r * when started, the application will prompt the user to enter info\r ## Team info\r * a user will be asked to select the employee type\r * only info specific to the employee type will be prompted \r ## Generate HTML \r * when the application is finished, a HTML page is generated\r * the HTML page will display the user's input\r ## Github and Email\r * when a user click on the email or github, the user opens that address in a new page\r * work in progress\r ## JEST test\r * The application passes all jest tests\r * for each of the role\r * work in progress\r ## walkthrough video: <a href=\"https://watch.screencastify.com/v/3ETJPY4iXM74YlaDudXC\">My walkthrough video</a>",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ening6649/tech-blog"
+    "url": "git+https://github.com/ening6649/tech-blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.3"
+  "bugs": {
+    "url": "https://github.com/ening6649/tech-blog/issues"
   },
+  "homepage": "https://github.com/ening6649/tech-blog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
-    "mysql2": "^2.1.0",
-    "sequelize": "^5.21.7"
+    "express-session": "^1.17.2",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.13.0"
   }
 }

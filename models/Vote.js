@@ -1,40 +1,37 @@
 const { Model, DataTypes } = require('sequelize');
-
 const sequelize = require('../config/connection');
 
-class ProductTag extends Model {}
+class Vote extends Model {}
 
-ProductTag.init(
+Vote.init(
   {
-    // define columns
     id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
-    product_id: {
+    user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'product',
+        model: 'user',
         key: 'id'
       }
     },
-    tag_id: {
+    post_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'tag',
+        model: 'post',
         key: 'id'
       }
-    },
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product_tag',
+    modelName: 'vote'
   }
 );
 
-module.exports = ProductTag;
+module.exports = Vote;
