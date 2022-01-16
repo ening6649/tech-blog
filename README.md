@@ -1,4 +1,4 @@
-# E-commerce Back End Starter Code
+# Techblog 
 
 ## Generate a webpage that displays my team
 * this page will display my team's basic info
